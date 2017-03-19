@@ -1,5 +1,7 @@
 *.tfstate*
 setup.cfg
-build/*
-!build/empty.txt
+tmp/*
+!tmp/empty.tmp
 *.tfvars
+lambda/*
+!lambda/security_groups_alert.py

@@ -12,7 +12,21 @@ information
 
 2. Install [terraform](https://www.terraform.io/downloads.html)
 
-3. Provide AWS credentials for terraform (see details [here](https://www.terraform.io/docs/providers/aws/index.html) )
-4. Run
+3. Create terraform.tfvars file with following variables:
+
+```
+regions      = "us-west-2, us-east-1"
+bucket_name  = "yourbuckername"
+mail_to      = "you@yourmail.com"
+mail_from    = "from@mail.com"
+```
+
+Script uses SES service to send emails, so mail address should be validated.
+
+or define them in terraform in any other way
+
+4. Provide AWS credentials for terraform (see details [here](https://www.terraform.io/docs/providers/aws/index.html) )
+
+5. Run
 
     terraform apply

@@ -1,0 +1,5 @@
+*.tfstate*
+setup.cfg
+build/*
+!build/empty.txt
+*.tfvars

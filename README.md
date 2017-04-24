@@ -8,7 +8,9 @@ information
 
 1. Install package DeepDiff into ./lambda folder
 
-    pip install deepdiff -t ./lambda
+```
+pip install -r requirements.txt -t ./lambda
+```
 
 2. Install [terraform](https://www.terraform.io/downloads.html)
 
@@ -25,8 +27,10 @@ Script uses SES service to send emails, so mail address should be validated.
 
 or define them in terraform in any other way
 
-4. Provide AWS credentials for terraform (see details [here](https://www.terraform.io/docs/providers/aws/index.html) )
+4. Provide AWS credentials for terraform (see details [here](https://www.terraform.io/docs/providers/aws/index.html))
 
 5. Run
 
-    terraform apply
+```
+terraform apply
+```
